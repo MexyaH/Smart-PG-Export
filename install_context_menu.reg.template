@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; Add "Export PostgreSQL Database Here" to folder background context menu
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PostgresExport]
+@="Export PostgreSQL Database Here"
+"Icon"="%INSTALL_PATH%\\PostgresExport.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PostgresExport\command]
+@="\"%INSTALL_PATH%\\PostgresExport.exe\" \"%V\""
+
+; Add "Export PostgreSQL Database Here" to folder context menu
+[HKEY_CLASSES_ROOT\Directory\shell\PostgresExport]
+@="Export PostgreSQL Database Here"
+"Icon"="%INSTALL_PATH%\\PostgresExport.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PostgresExport\command]
+@="\"%INSTALL_PATH%\\PostgresExport.exe\" \"%1\""
+
+; Add "Export PostgreSQL Database Here" to drive context menu
+[HKEY_CLASSES_ROOT\Drive\shell\PostgresExport]
+@="Export PostgreSQL Database Here"
+"Icon"="%INSTALL_PATH%\\PostgresExport.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\PostgresExport\command]
+@="\"%INSTALL_PATH%\\PostgresExport.exe\" \"%1\""
