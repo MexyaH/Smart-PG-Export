@@ -10,6 +10,7 @@ Can be called from a Windows context menu passing a target folder as argv[1];
 that folder is pre-filled as the output directory.
 """
 
+import utils.session
 import os
 import sys
 import csv
